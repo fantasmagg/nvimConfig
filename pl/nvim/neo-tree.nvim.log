@@ -1,0 +1,13 @@
+[ERROR Sun 08 Jun 2025 03:05:27 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(edit):E325: ATTENTION
+[INFO  Sun 08 Jun 2025 03:05:50 AM UTC] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:113: No items, skipping git ignored/status lookups
+[INFO  Sun 08 Jun 2025 03:06:55 AM UTC] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:113: No items, skipping git ignored/status lookups
+[INFO  Sun 08 Jun 2025 03:12:34 AM UTC] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:588: Deleted directory  /home/gotasa/Documents/itlaE/boseto/js
+[ERROR Sun 08 Jun 2025 03:13:37 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(edit):E325: ATTENTION
+[ERROR Sun 08 Jun 2025 03:15:18 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(vsplit):E325: ATTENTION
+[ERROR Sun 08 Jun 2025 03:17:48 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(vsplit):E325: ATTENTION
+[ERROR Sun 08 Jun 2025 03:27:25 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(buffer):E325: ATTENTION
+[ERROR Sun 08 Jun 2025 03:28:52 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: Keyboard interrupt
+[ERROR Sun 08 Jun 2025 03:29:05 AM UTC] ...re/nvim/lazy/neo-tree.nvim/lua/neo-tree/events/queue.lua:93: Error in event handler for event vim_buffer_enter[table: 0x7f352d602df8]: vim/_editor.lua:0: nvim_exec2()[1]..BufEnter Autocommands for "*"..script nvim_exec2() called at BufEnter Autocommands for "*":0, line 1: Vim(buffer):E305: No swap file found for neo-tree filesystem [1]
+[ERROR Sun 08 Jun 2025 03:29:15 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: Keyboard interrupt
+[ERROR Sun 08 Jun 2025 03:30:08 AM UTC] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:833: Error opening file: vim/_editor.lua:0: nvim_exec2(), line 1: Vim(buffer):E325: ATTENTION
+[INFO  Sun 08 Jun 2025 03:56:20 AM UTC] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:113: No items, skipping git ignored/status lookups

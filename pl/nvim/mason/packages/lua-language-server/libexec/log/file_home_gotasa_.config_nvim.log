@@ -1,0 +1,345 @@
+[22:18:54.302][info] [#0:/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec
+[22:18:54.302][info] [#0:/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec
+[22:18:54.302][info] [#0:/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[22:18:54.302][info] [#0:/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[22:18:54.302][info] [#0:/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.14.0
+[22:18:54.317][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[22:18:54.317][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.263 MB
+        # 00 : 2.263 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[22:18:54.420][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit", "command" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "sortText", "filterText", "insertText", "textEdit", "insertTextFormat", "insertTextMode" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = false,
+        foldingRange = {
+          collapsedText = true
+        },
+        lineFoldingOnly = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true,
+        rangesSupport = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.11.1+dirty"
+  },
+  initializationOptions = {},
+  processId = 77039,
+  rootPath = "/home/gotasa/.config/nvim",
+  rootUri = "file:///home/gotasa/.config/nvim",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = "/home/gotasa/.config/nvim",
+      uri = "file:///home/gotasa/.config/nvim"
+    } }
+}
+[22:18:54.420][info] [#0:script/language.lua:137]: VSC language: nil
+[22:18:54.420][info] [#0:script/language.lua:138]: LS  language: en-us
+[22:18:54.420][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/gotasa/.config/nvim
+[22:18:54.420][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_home_gotasa_.config_nvim.log
+[22:18:54.420][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/gotasa/.config/nvim
+[22:21:59.862][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[22:21:59.963][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[22:21:59.963][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[22:21:59.963][info] [#0:script/provider/provider.lua:66]: nil
+[22:22:00.069][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/gotasa/.config/nvim
+[22:22:00.076][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[22:22:00.181][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/gotasa/.config/nvim
+[22:22:00.182][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/gotasa/.config/nvim
+[22:22:00.183][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[22:22:00.185][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[22:22:00.185][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[22:22:00.186][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[22:22:00.186][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[22:22:00.186][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[22:22:00.186][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[22:22:00.186][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[22:22:00.187][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[22:22:00.187][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[22:22:00.187][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[22:22:00.187][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[22:22:00.188][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[22:22:00.189][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[22:22:00.189][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[22:22:00.189][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[22:22:00.189][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[22:22:00.189][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[22:22:00.289][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[22:22:00.289][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[22:22:00.289][info] [#0:script/workspace/workspace.lua:379]: Found 31 files at:	file:///home/gotasa/.config/nvim
+[22:22:00.289][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/gotasa/.config/nvim
+[22:22:00.290][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[22:22:00.293][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[22:22:00.293][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[22:22:00.294][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[22:22:00.294][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[22:22:00.294][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[22:22:00.295][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[22:22:00.295][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[22:22:00.295][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.542 KB
+[22:22:00.298][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[22:22:00.298][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[22:22:00.298][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[22:22:00.300][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[22:22:00.300][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[22:22:00.300][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[22:22:00.300][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 5.234 KB
+[22:22:00.302][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[22:22:00.302][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[22:22:00.302][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[22:22:00.303][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.611 KB
+[22:22:00.306][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[22:22:00.306][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[22:22:00.306][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[22:22:00.307][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[22:22:00.307][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[22:22:00.307][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[22:22:00.307][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[22:22:00.308][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[22:22:00.308][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[22:22:00.308][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[22:22:00.308][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
+[22:22:00.309][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[22:22:00.309][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[22:22:00.309][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[22:22:00.310][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
+[22:22:00.315][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[22:22:00.315][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/gotasa/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[22:22:00.315][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.026] sec: <fallback>
+[22:22:00.315][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[22:22:00.315][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[22:22:00.315][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[22:22:00.316][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/gotasa/.config/nvim/init.lua
+[22:22:00.316][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/keymaps.lua , size = 3.044 KB
+[22:22:00.420][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/alpha.lua , size = 2.774 KB
+[22:22:00.420][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/spectre.lua , size = 0.186 KB
+[22:22:00.421][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/lsp-config.lua , size = 1.456 KB
+[22:22:00.421][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/neo-tree.lua , size = 1.184 KB
+[22:22:00.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/onedarkpro.lua , size = 0.728 KB
+[22:22:00.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/which-key.lua , size = 0.445 KB
+[22:22:00.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/none-ls.lua , size = 0.698 KB
+[22:22:00.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/autopairs.lua , size = 0.080 KB
+[22:22:00.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/treesitter.lua , size = 0.353 KB
+[22:22:00.423][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/bufferline.lua , size = 0.654 KB
+[22:22:00.423][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/highlight-colors.lua , size = 0.281 KB
+[22:22:00.423][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/lualine.lua , size = 0.328 KB
+[22:22:00.423][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/telescope.lua , size = 0.449 KB
+[22:22:00.423][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/completions.lua , size = 1.450 KB
+[22:22:00.424][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/comment.lua , size = 0.183 KB
+[22:22:00.424][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/vim-options.lua , size = 0.645 KB
+[22:22:00.424][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins/ibl.lua , size = 0.141 KB
+[22:22:00.424][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/gotasa/.config/nvim/lua/plugins.lua , size = 0.010 KB
+[22:22:00.525][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.035] sec: file:///home/gotasa/.config/nvim
+[22:22:00.525][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/gotasa/.config/nvim
+[22:22:00.525][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/gotasa/.config/nvim
+[22:22:00.525][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/gotasa/.config/nvim
+[22:22:00.528][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/gotasa/.config/nvim], files count:[31]
+[22:22:00.693][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/gotasa/.config/nvim] finished, takes [0.039] sec.
+[22:26:37.652][info] [#0:script/provider/provider.lua:176]: Server shutdown.
+[22:26:37.753][warn] [#0:script/pub/report.lua:24]: Load proto error:	Disconnected!
